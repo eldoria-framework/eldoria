@@ -47,7 +47,9 @@ public class MessageWhisperWeaver extends ListenerAdapter {
     private Runnable runWithSender(MessageReceivedEvent event, String contentRaw) {
         return () -> {
             final RuneResult runeResult = processRuneUseCase.execute(contentRaw.substring(1).split(" "));
-            runeResult.getOutput().forEach(s -> event.getChannel().sendMessage(s).queue());
+            runeResult.getOutput()
+                    .flatMap(result -> Mono.fromRunnable(() -> event.getChannel().sendMessage(result).queue()))
+                    .subscribe();
         };
     }
 

@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-    .rounded {
-        border-radius: 50%;
-    }
-    </style>
-</head>
 <body>
     <a href="https://eldoria.dev">
-        <img class="rounded" align="right" src="https://i.imgur.com/rbKkKFl.png" height="220" width="220">
+        <img style=" border-radius: 50%" class="rounded" align="right" src="https://i.imgur.com/rbKkKFl.png" height="220" width="220">
     </a>
     <h1>Welcome to the Eldoria Wiki! 🪄✨</h1>
     <h2>Project Overview 🌟</h2>

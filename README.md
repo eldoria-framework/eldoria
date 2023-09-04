@@ -61,7 +61,7 @@ To embark on your enchanting journey with Eldoria, follow these steps:
 ```xml
 
 <dependency>
-    <groupId>com.github.eldoria-framework</groupId>
+    <groupId>com.github.eldoria-realm</groupId>
     <artifactId>eldoria</artifactId>
     <version>-{version}</version>
 </dependency>

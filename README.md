@@ -1,3 +1,4 @@
+[![](https://jitpack.io/v/eldoria-realm/eldoria.svg)](https://jitpack.io/#eldoria-realm/eldoria)
 <!DOCTYPE html>
 <html>
 <body>

@@ -4,6 +4,7 @@ package dev.eldoria.amulet.configuration.usecase;
 import dev.eldoria.amulet.core.usecase.enrich.Amulet;
 import dev.eldoria.amulet.core.usecase.enrich.EnrichCodex;
 import dev.eldoria.amulet.core.usecase.process.amulet.ProcessUpdatePresenceUseCase;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -20,6 +21,7 @@ public class UseCasesConfiguration {
     }
 
     @Bean
+    @ConditionalOnBean(Amulet.class)
     public ProcessUpdatePresenceUseCase processUpdatePresenceUseCase(Amulet amulet) {
         return new ProcessUpdatePresenceUseCase(amulet);
     }

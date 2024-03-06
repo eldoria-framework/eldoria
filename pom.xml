@@ -15,7 +15,7 @@
     </parent>
     <groupId>dev.eldoria</groupId>
     <artifactId>eldoria</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.4</version>
     <name>eldoria</name>
     <packaging>pom</packaging>
     <description>eldoria</description>

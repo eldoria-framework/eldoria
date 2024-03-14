@@ -11,5 +11,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ArcaneRequest {
     private String spell;
+    private String attribute;
     private Object artifact;
 }
